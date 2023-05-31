@@ -13,6 +13,7 @@ async function* anotherFunction (urlApi){
         const product = await fetchData(`${urlApi}/products/${products[12].id}`)
         const category = await fetchData(`${urlApi}/categories/${product.category.id}`)
         // yield console.log(products);
+        //a
         yield console.log(product.title);
         yield console.log(category.name);
     }catch (error){
